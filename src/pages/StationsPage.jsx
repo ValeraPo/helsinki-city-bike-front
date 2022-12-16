@@ -1,12 +1,15 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom";
+import { DisplayList } from "../components/DisplayList";
+import { Pagination } from "../components/Pagination";
 
 export const StationsPage = () => {
     const [isLoaded, setIsLoaded] = useState(true);
     const [error, setError] = useState('');
     const [items, setItems] = useState([]);
-
+    const [currentPage, setCurrentPage] = useState(1);
+    const rows = 100;
+    
     useEffect(() => {
         axios.get("https://localhost:7180/api/station")
         .then(res => {
@@ -16,7 +19,10 @@ export const StationsPage = () => {
         .catch(e => setError(e));
     }, [])
 
-   
+    const onClickBtnPage = (page) => {
+        setCurrentPage(page);
+    }
+
     return (
         <>
             {isLoaded &&
@@ -26,15 +32,13 @@ export const StationsPage = () => {
                     Error {error.message}
                 </p> :
                 <>
-                    <ul>
-                        {items.map(item => (
-                            <li key = {item.Name}>
-                                <Link to={`/stations/${item.name}`}>
-                                    {item.name}, {item.address} 
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
+                    <DisplayList arrData={items} page={currentPage} rowPerPage={rows} />
+                    <Pagination
+                        arrData={items}
+                        currentPage={currentPage}
+                        rowsOnPage = {rows}
+                        changePage={onClickBtnPage}
+                    />
                 </>                                
             }
         </>
