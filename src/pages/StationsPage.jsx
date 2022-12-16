@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
 
 export const StationsPage = () => {
     const [isLoaded, setIsLoaded] = useState(true);
@@ -28,7 +29,9 @@ export const StationsPage = () => {
                     <ul>
                         {items.map(item => (
                             <li key = {item.Name}>
-                                {item.name}, {item.address} 
+                                <Link to={`/stations/${item.name}`}>
+                                    {item.name}, {item.address} 
+                                </Link>
                             </li>
                         ))}
                     </ul>

@@ -11,6 +11,7 @@ import {
 import { HomePage } from './pages/HomePage';
 import {JourneysPage} from './pages/JourneysPage';
 import { StationsPage } from './pages/StationsPage';
+import { StationItemPage } from './pages/StationItemPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" element={<HomePage/>} />
           <Route path="/journeys" element={<JourneysPage/>} />
           <Route path="/stations" element={<StationsPage/>} />
+          <Route path="/stations/:stationName" element={<StationItemPage/>} />
         </Routes>
       </Router>
     </>
