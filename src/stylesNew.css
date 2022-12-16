@@ -1,0 +1,75 @@
+.stations-list {
+    margin: 0 auto;
+    padding: 20px 0 0 50px;
+  }
+
+  .stations-list li a {
+    color: black;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination_list {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+  }
+  
+  .pagination_list button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .pagination_item {
+    padding: 8px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .pagination_item+.pagination_item {
+    margin-left: 8px;
+  }
+  
+  .pagination_item.active {
+    background-color: rgb(190, 188, 188);
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .stations-list {
+    margin: 0 auto;
+    padding: 20px 0 0 50px;
+  }
+  
+  .stations-list li a {
+    color: black;
+  }
+  
+  
+  .upload-btn {
+    margin: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .upload-btn:hover {
+    color: #282c34;
+  }
+  
+  .upload-btn:active {
+    color: #61dafb;
+  }
+  
+.station{
+    margin: 20px 0 0 20px;
+  }
+

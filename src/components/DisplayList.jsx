@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../stylesNew.css';
 
 export const DisplayList = ({arrData, rowPerPage, page}) => {
     
@@ -7,7 +8,7 @@ export const DisplayList = ({arrData, rowPerPage, page}) => {
     const paginatedData = arrData.slice(start, end)
 
     return (
-        <ul>
+        <ul className="stations-list">
             {paginatedData.map(item => (
                 <li key = {item.name}>
                     <Link to={`/stations/${item.name}`}>

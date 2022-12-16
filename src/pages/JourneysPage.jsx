@@ -37,7 +37,7 @@ export const JourneysPage = () => {
                     Error {error.message}
                 </p> :
                 <>
-                    <ul>
+                    <ul className="stations-list">
                         {items.map(item => (
                             <li key = {item.id}>
                                 Departure Station Name: {item.departureStationName}<br/>
@@ -47,7 +47,7 @@ export const JourneysPage = () => {
                             </li>
                         ))}
                     </ul>
-                    <a className onClick={onClickAddRows}>Upload next {rows} journeys</a>
+                    <a className="upload-btn" onClick={onClickAddRows}>Upload next {rows} journeys</a>
                 </>
             }
         </>

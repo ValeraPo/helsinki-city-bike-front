@@ -26,7 +26,7 @@ export const StationItemPage = () => {
                 <p>
                     Error {error.message}
                 </p> :
-                <div>
+                <div className = "station">
                     <h1>{station.name}<br/></h1>
                     Address: {station.address}<br/>
                     Total number of journeys starting from the station: {station.numberOfJourneysStartingFrom}<br/>
