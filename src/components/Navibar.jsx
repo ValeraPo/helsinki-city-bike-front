@@ -7,7 +7,7 @@ export default function NaviBar() {
     return (
     <>
         <Navbar collapseOnSelect expand = "lg" bg = "dark" variant = "dark">
-            <Navbar.Brand>Helsinki Sity Bike</Navbar.Brand>
+            <Navbar.Brand>Helsinki Сity Bike</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
