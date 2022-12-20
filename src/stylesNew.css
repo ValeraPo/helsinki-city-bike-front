@@ -77,3 +77,14 @@
     margin: 4px 0 0 50px;
   }
 
+  .responsive {
+    display: block;
+    max-width: 100%;
+    max-height: 90vh;
+    margin: auto;
+    
+  }
+
+  .bg {
+    background-image:  url('./images/backgound.png') ;
+  }
