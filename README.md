@@ -16,16 +16,16 @@ If you click on any station, it shows you more information about this station. S
 - Top 5 most popular return stations for journeys starting from the station
 - Top 5 most popular departure stations for journeys ending at the station
 
-##Stack
+## Stack
 The application is implemented in JavaScript and React. It uses `react-router-dom`, `react-bootstrap`, `axios` libraries.
  
-##Prerequisites for starting the application
+## Prerequisites for starting the application
 You need to have Windows 64 OS.
 You need to have git. If you do not, you can [download](https://git-scm.com/download/win) it.
 Then you should install [VS Code](https://code.visualstudio.com/download) or [Visual Studio](https://visualstudio.microsoft.com/vs/). 
 After that, you should install [Node.js](https://nodejs.org/en/). In the installer, you need to check “Automatically install all necessary tools”.
 
-##Start application
+## Start application
 To launch frontend - clone this repository.
 Make sure that http://localhost:3000 is available.
 Open Terminal in the project folder and write `npm install` for installing all necessary libraries.
